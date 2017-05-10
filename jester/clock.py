@@ -19,4 +19,4 @@ def round_date_to_last_hour(date):
     :return: Day representation
     :rtype: datetime.datetime
     """
-    return datetime(date.year, date.month, date.day, 0, 0, 0)
+    return datetime(date.year, date.month, date.day, date.hour, 0, 0)
