@@ -46,7 +46,7 @@ class MySQLConnection:
 
     def execute_batch_insert(self, query, params, size=100):
         results = []
-        for chunk in bard.utils.chunk(params, size):
+        for chunk in jester.utils.chunk(params, size):
             results.append(self.execute_raw(query, list(chunk)))
 
         return results
@@ -58,7 +58,7 @@ class MySQLConnection:
         ids = params[0]
 
         results = []
-        for chunk in bard.utils.chunk(ids, size):
+        for chunk in jester.utils.chunk(ids, size):
             results.append(self.execute_raw(query, [list(chunk)]))
 
         return results
