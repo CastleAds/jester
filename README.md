@@ -2,7 +2,14 @@
 
 Convenience utilities for applications in Python 3.4+
 
-## MySQL
+## Get started
+
+```
+pip install jester
+```
+
+## Packages
+### MySQL
 
 ```
 import jester.mysql
@@ -35,7 +42,7 @@ transaction_data = db.execute(query)
 print(transaction_data['vendor_detail_1'])
 ```
 
-## Utils
+### Utils
 
 ```
 from jester.utils import flatten
