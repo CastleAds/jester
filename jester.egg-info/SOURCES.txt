@@ -2,7 +2,9 @@ setup.py
 jester/__init__.py
 jester/cache.py
 jester/constants.py
+jester/math.py
 jester/mysql.py
+jester/time.py
 jester/utils.py
 jester.egg-info/PKG-INFO
 jester.egg-info/SOURCES.txt
