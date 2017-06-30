@@ -20,14 +20,14 @@ class Cache:
         self.max_size = max_size
         self.storage = {}
 
-    def get(self, key:str):
+    def get(self, key):
         item = self.storage.get(key)
         if item is None or item.is_expired():
             return None
 
         return item.value
 
-    def put(self, key:str, value, ttl=None):
+    def put(self, key, value, ttl=None):
         item = CacheItem(value, ttl)
         self.storage[key] = item
         return True
@@ -45,5 +45,5 @@ class Cache:
 
 global_cache = Cache()
 
-def cached(key:str, value, ttl=None):
+def cached(key, value, ttl=None):
     return global_cache.get_or_else(key, value, ttl)

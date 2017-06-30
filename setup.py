@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='jester',
-      version='0.22',
+      version='0.25',
       description='Utilities for web applications in Python3.4',
       url='http://github.com/CastleAds/jester',
       author='Nicholas Connor',
